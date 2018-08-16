@@ -4,8 +4,9 @@ def my_select(collection)
  even_nums = []
  while counter < collection.length 
    if collection[counter].even?
-    counter+=1 
+    even_nums << collection[counter]
   end
-
+  counter+=1 
+end
  even_nums
 end
