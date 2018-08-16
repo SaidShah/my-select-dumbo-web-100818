@@ -1,9 +1,9 @@
 def my_select(collection)
-  block_given?
+ if block_given?
  counter = 0 
  even_nums = []
  while counter < collection.length 
-   even_nums << yield(collection[counter])
+   even_nums << yield(collection[counter].even?)
     counter+=1 
   end
  end
